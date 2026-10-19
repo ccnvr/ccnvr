@@ -1,0 +1,101 @@
+name: Bug report
+description: Something is not working as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+        For **security issues**, do not use this form — see [SECURITY.md](https://github.com/ccnvr/ccnvr/blob/main/SECURITY.md).
+        Please search existing issues first; duplicates are closed without comment.
+
+  - type: input
+    id: version
+    attributes:
+      label: CCNVR version
+      description: Shown in System info inside the web console
+      placeholder: 1.0.1
+    validations:
+      required: true
+
+  - type: dropdown
+    id: deployment
+    attributes:
+      label: Deployment
+      options:
+        - Windows
+        - Linux (tarball)
+        - Docker
+        - Other / custom
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Host OS and version
+      placeholder: Ubuntu 22.04 / Windows 11 / Docker 27 on Debian 12
+    validations:
+      required: true
+
+  - type: input
+    id: camera
+    attributes:
+      label: Camera model and firmware
+      description: Vendor, model, firmware version — "Hikvision DS-2CD2143G2, V5.7.3"
+      placeholder: Hikvision DS-2CD2143G2, firmware V5.7.3
+
+  - type: dropdown
+    id: protocol
+    attributes:
+      label: Protocol involved
+      multiple: true
+      options:
+        - RTSP
+        - ONVIF
+        - GB28181
+        - RTMP
+        - WebRTC / FLV playback
+        - Web console (UI)
+        - Recording / playback
+        - License
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps, starting from a fresh install where possible
+      placeholder: |
+        1. Add a camera via ONVIF
+        2. Open live view
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant lines from the server log, plus any browser console errors. Redact IPs and credentials.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+        - label: I am running the latest release
+          required: true

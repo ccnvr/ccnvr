@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://ccnvr.com/docs/getting-started
+    about: Install steps, port table, Docker flags and troubleshooting.
+  - name: Setup questions and configuration help
+    url: https://github.com/ccnvr/ccnvr/discussions
+    about: Ask here instead of opening an issue.
+  - name: Security vulnerability
+    url: https://github.com/ccnvr/ccnvr/security/advisories/new
+    about: Report privately. Never open a public issue for security problems.
+  - name: Commercial licensing
+    url: https://ccnvr.com/docs/contact
+    about: More channels, OEM distribution or commercial use.
