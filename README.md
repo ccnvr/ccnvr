@@ -120,12 +120,6 @@ docker run -d --name ccnvr --restart always \
 
 On a cloud server, open these in the security group as well as the host firewall.
 
-## License
-
-Without a license CCNVR runs as the **free edition: 5 channels**. Upload a `.lic` file under **System info → License**; it takes effect immediately. Commercial use and more channels: [ccnvr.com](https://ccnvr.com).
-
-Upgrades are done in **System info → Manual Update**; `configs/`, `data/` and `records/` are kept.
-
 ## Support
 
 | | |
