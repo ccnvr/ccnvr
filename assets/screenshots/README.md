@@ -1,23 +1,11 @@
-# Screenshots
+# Screenshots / 界面截图
 
-Drop product screenshots here, then reference them from the top of `README.md`.
-
-Recommended set (PNG, 1600px wide, dark theme — the console is dark by default):
+`README.md` and `README.zh-CN.md` use the 1600px `.jpg` files. The `.png` files are the original captures.
 
 | File | Content |
 | --- | --- |
-| `live-view.png` | 4-split live view with real cameras, PTZ panel visible |
-| `playback.png` | Playback timeline with a recording selected |
-| `device-list.png` | Device list showing ONVIF and GB28181 devices |
-| `system-info.png` | System info page (resource charts, license status) |
-| `demo.gif` | 10–15 s loop: open live view, switch stream, open playback |
+| `live.jpg` | Live view with stream info / 实时预览与码流信息 |
+| `device.jpg` | Device list / 设备列表 |
+| `record.jpg` | Playback timeline / 回放时间轴 |
 
-Reference in README above the feature table:
-
-```markdown
-![CCNVR live view](assets/screenshots/live-view.png)
-```
-
-Keep total size under ~5 MB — GitHub serves these from the repo, and large
-GIFs make the README slow to load on mobile. Compress with `pngquant` or
-`gifsicle -O3 --lossy=60`.
+When updating / 更新截图时：replace the `.png` source, export a 1600px-wide `.jpg` (quality ~90), and crop the browser toolbar and desktop edges. / 替换 `.png` 原图后，导出 1600px 宽的 `.jpg`（质量约 90），并裁掉浏览器工具栏和桌面边缘。

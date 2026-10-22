@@ -1,14 +1,17 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Documentation
+  - name: Documentation / 文档
     url: https://ccnvr.com/docs/getting-started
-    about: Install steps, port table, Docker flags and troubleshooting.
-  - name: Setup questions and configuration help
-    url: https://github.com/ccnvr/ccnvr/discussions
-    about: Ask here instead of opening an issue.
-  - name: Security vulnerability
-    url: https://github.com/ccnvr/ccnvr/security/advisories/new
-    about: Report privately. Never open a public issue for security problems.
-  - name: Commercial licensing
+    about: Install steps, port table, Docker flags and troubleshooting. / 安装步骤、端口表、Docker 参数与常见问题。
+  - name: Setup help / 安装与配置帮助
     url: https://ccnvr.com/docs/contact
-    about: More channels, OEM distribution or commercial use.
+    about: Ask setup questions here instead of opening an issue. / 安装、配置和授权问题请走这里，不要提交 Issue。
+  - name: Live demo / 在线演示
+    url: https://demo.ccnvr.com
+    about: Try CCNVR online — username and password are ccnvr_user. / 在线体验，账号密码均为 ccnvr_user。
+  - name: Security vulnerability / 安全漏洞
+    url: https://github.com/ccnvr/ccnvr/security/advisories/new
+    about: Report privately. Never open a public issue for security problems. / 请私密上报，不要提交公开 Issue。
+  - name: Commercial licensing / 商业授权
+    url: https://ccnvr.com/docs/contact
+    about: More channels, OEM distribution or commercial use. / 增加路数、OEM 分发或商业使用。
